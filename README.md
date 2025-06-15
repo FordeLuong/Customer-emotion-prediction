@@ -28,6 +28,7 @@ streamlit run app.py
 2. The application will open in your default web browser.
 
 3. Select the model you want to use (e.g., "Nhà hàng" or "Khách sạn") from the sidebar.
+Note: The "Khách sạn" model is currently under development and may not provide full functionality or accuracy yet.
 
 4. Enter the text you want to analyze in the text area.
 

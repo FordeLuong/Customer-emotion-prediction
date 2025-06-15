@@ -1,0 +1,92 @@
+ASPECTS = {
+    "Nhà hàng": [
+        'FOOD#QUALITY', 'FOOD#PRICES', 'SERVICE#GENERAL', 'AMBIENCE#GENERAL',
+        'LOCATION#GENERAL', 'RESTAURANT#GENERAL', 'FOOD#STYLE&OPTIONS',
+        'RESTAURANT#PRICES', 'RESTAURANT#MISCELLANEOUS', 'DRINKS#QUALITY',
+        'DRINKS#PRICES', 'DRINKS#STYLE&OPTIONS'
+    ],
+    "Khách sạn": [
+        'HOTEL#GENERAL', 'HOTEL#COMFORT', 'HOTEL#CLEANLINESS', 'HOTEL#DESIGN&FEATURES',
+        'HOTEL#QUALITY', 'HOTEL#PRICES', 'ROOMS#GENERAL', 'ROOMS#CLEANLINESS',
+        'ROOMS#DESIGN&FEATURES', 'ROOMS#COMFORT', 'ROOMS#QUALITY', 'ROOMS#PRICES',
+        'ROOM_AMENITIES#GENERAL', 'ROOM_AMENITIES#CLEANLINESS', 'ROOM_AMENITIES#QUALITY',
+        'ROOM_AMENITIES#DESIGN&FEATURES', 'ROOM_AMENITIES#COMFORT', 'FACILITIES#GENERAL',
+        'FACILITIES#QUALITY', 'FACILITIES#DESIGN&FEATURES', 'FACILITIES#CLEANLINESS',
+        'FACILITIES#COMFORT', 'FACILITIES#PRICES', 'LOCATION#GENERAL', 'SERVICE#GENERAL',
+        'FOOD&DRINKS#QUALITY', 'FOOD&DRINKS#STYLE&OPTIONS', 'FOOD&DRINKS#PRICES',
+        'FOOD&DRINKS#MISCELLANEOUS'
+    ]
+}
+
+ASPECT_KEYWORDS = {
+    "Nhà hàng": {
+        'FOOD#QUALITY': ['béo', 'bở', 'cay', 'chất lượng', 'chua', 'cứng', 'dai', 'dở', 'đậm đà', 'đỉnh', 'đồ ăn',
+                         'giòn', 'hợp khẩu vị', 'hôi', 'khó ăn', 'khô', 'mặn', 'mềm', 'mùi vị', 'ngấy', 'ngon', 'nguội',
+                         'nhạt', 'nóng hổi', 'nêm nếm', 'tanh', 'tươi', 'tuyệt vời', 'tệ', 'thơm', 'thức ăn', 'ướp',
+                         'vị', 'vừa miệng', 'xuất sắc'],
+        'FOOD#PRICES': ['bình dân', 'cao', 'chát', 'chi phí', 'giá', 'giá cả', 'giá tiền', 'giảm giá', 'hạt dẻ',
+                        'hợp lý', 'hóa đơn', 'khuyến mãi', 'mắc', 'phải chăng', 'rẻ', 'rẻ bèo', 'thanh toán', 'tiền',
+                        'voucher', 'đắt', 'đắt đỏ'],
+        'SERVICE#GENERAL': ['bảo vệ', 'chuyên nghiệp', 'chờ đợi', 'chu đáo', 'chủ quán', 'chậm', 'cọc cằn', 'dễ thương',
+                            'gọi món', 'khó chịu', 'lâu', 'lơ', 'lơ là', 'niềm nở', 'nhanh', 'nhân viên', 'nhiệt tình',
+                            'order', 'phục vụ', 'quên món', 'thái độ', 'thân thiện', 'thô lỗ', 'tận tình', 'tận tâm',
+                            'vui vẻ'],
+        'AMBIENCE#GENERAL': ['ấm cúng', 'âm nhạc', 'ánh sáng', 'bàn ghế', 'bẩn', 'bí', 'chật', 'chật chội', 'dơ',
+                             'dễ thương', 'không gian', 'mát mẻ', 'nhà vệ sinh', 'nóng', 'ồn', 'ồn ào', 'rộng',
+                             'sạch', 'sạch sẽ', 'sang trọng', 'thoáng', 'thoải mái', 'toilet', 'tối tăm',
+                             'trang trí', 'view', 'vệ sinh', 'yên tĩnh', 'đẹp'],
+        'LOCATION#GENERAL': ['dễ tìm', 'gần', 'khó tìm', 'khuất', 'mặt tiền', 'sâu', 'trung tâm', 'trong hẻm', 'vị trí',
+                             'xa', 'địa chỉ', 'địa điểm', 'đường'],
+        'RESTAURANT#GENERAL': ['chất lượng', 'chán', 'ghé', 'giới thiệu', 'hài lòng', 'nên thử', 'nhà hàng', 'quán',
+                               'quay lại', 'thất vọng', 'thích', 'trải nghiệm', 'tổng thể', 'ổn', 'đáng', 'đề cử',
+                               'không quay lại'],
+        'FOOD#STYLE&OPTIONS': ['combo', 'kiểu', 'kích cỡ', 'lựa chọn', 'lèo tèo', 'menu', 'món', 'món mới',
+                               'nghèo nàn', 'nhiều', 'phong phú', 'phần ăn', 'size', 'suất', 'thực đơn', 'đa dạng',
+                               'đặc sản', 'đặc sắc', 'đầy đặn', 'ít'],
+        'RESTAURANT#PRICES': ['bình dân', 'cao', 'chi phí', 'giá cả', 'giảm giá', 'hợp lý', 'khuyến mãi', 'mắc',
+                              'phải chăng', 'tiết kiệm', 'voucher', 'đắt đỏ'],
+        'RESTAURANT#MISCELLANEOUS': ['bao tay', 'chỗ đậu xe', 'chỗ ngồi', 'giữ xe', 'gửi xe', 'hộp đựng', 'khăn lạnh',
+                                     'máy lạnh', 'ổ cắm', 'thanh toán thẻ', 'thoải mái', 'tiện ích', 'tiện nghi',
+                                     'vệ sinh', 'wifi', 'điều hòa'],
+        'DRINKS#QUALITY': ['cà phê', 'dễ uống', 'dở', 'giải khát', 'gắt', 'hóa học', 'kem', 'lạt', 'mát', 'ngon',
+                           'ngọt', 'nguyên chất', 'nhạt', 'nước ngọt', 'nước uống', 'pha chế', 'sinh tố', 'thanh',
+                           'topping', 'trà', 'trà sữa', 'trân châu', 'đá', 'đậm vị', 'đồ uống', 'đặc'],
+        'DRINKS#PRICES': ['cao', 'chát', 'giá', 'hạt dẻ', 'hợp lý', 'mắc', 'miễn phí', 'nước ngọt', 'nước uống',
+                          'refill', 'rẻ', 'trà đá', 'đắt'],
+        'DRINKS#STYLE&OPTIONS': ['combo', 'lựa chọn', 'menu', 'nhiều loại', 'nước ép', 'nước sâm', 'nước uống',
+                                 'soda', 'thực đơn', 'trà sữa', 'đa dạng', 'đồ uống']
+    },
+    "Khách sạn": {
+        'HOTEL#GENERAL': ['khách sạn', 'tổng thể', 'trải nghiệm'],
+        'HOTEL#COMFORT': ['thoải mái', 'yên tĩnh', 'ồn ào'],
+        'HOTEL#CLEANLINESS': ['sạch sẽ', 'bẩn', 'vệ sinh'],
+        'HOTEL#DESIGN&FEATURES': ['đẹp', 'thiết kế', 'kiến trúc', 'mới'],
+        'HOTEL#QUALITY': ['chất lượng', 'tiêu chuẩn'],
+        'HOTEL#PRICES': ['giá', 'rẻ', 'đắt', 'hợp lý'],
+        'ROOMS#GENERAL': ['phòng', 'phòng ốc'],
+        'ROOMS#CLEANLINESS': ['sạch', 'bẩn', 'vệ sinh phòng'],
+        'ROOMS#DESIGN&FEATURES': ['rộng', 'chật', 'thiết kế phòng'],
+        'ROOMS#COMFORT': ['thoải mái', 'khó chịu', 'giường'],
+        'ROOMS#QUALITY': ['chất lượng phòng'],
+        'ROOMS#PRICES': ['giá phòng', 'chi phí'],
+        'ROOM_AMENITIES#GENERAL': ['tiện nghi', 'đồ dùng'],
+        'ROOM_AMENITIES#CLEANLINESS': ['không sạch', 'không bẩn'],
+        'ROOM_AMENITIES#QUALITY': ['chất lượng đồ dùng'],
+        'ROOM_AMENITIES#DESIGN&FEATURES': ['thiết kế đồ dùng'],
+        'ROOM_AMENITIES#COMFORT': ['thoải mái đồ dùng'],
+        'FACILITIES#GENERAL': ['cơ sở', 'dịch vụ'],
+        'FACILITIES#QUALITY': ['chất lượng cơ sở'],
+        'FACILITIES#DESIGN&FEATURES': ['thiết kế cơ sở', 'bể bơi'],
+        'FACILITIES#CLEANLINESS': ['sạch cơ sở'],
+        'FACILITIES#COMFORT': ['thoải mái cơ sở'],
+        'FACILITIES#PRICES': ['giá dịch vụ'],
+        'LOCATION#GENERAL': ['vị trí', 'địa điểm', 'gần', 'xa'],
+        'SERVICE#GENERAL': ['phục vụ', 'nhân viên', 'thái độ'],
+        'FOOD&DRINKS#QUALITY': ['ngon', 'dở', 'chất lượng đồ ăn'],
+        'FOOD&DRINKS#STYLE&OPTIONS': ['đa dạng', 'menu', 'lựa chọn'],
+        'FOOD&DRINKS#PRICES': ['giá đồ ăn', 'rẻ', 'đắt'],
+        'FOOD&DRINKS#MISCELLANEOUS': ['bữa sáng', 'buffet']
+    }
+}
+
+LABEL_ENCODER = ['negative','neutral','positive'] 
